@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="jumbotron deletepagediv">
+    <h1>Did a puppy get adopted??</h1>
+    <p>If so please enter the pupppy ID to remove them from the database.</p>
+
+    <form method="POST" class="deletepageform">
+        {{form.hidden_tag()}}
+        {{form.id.label}}{{form.id}}
+        {{form.submit(class_="formsubmit")}}
+    </form>
+
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Adoption</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel='stylesheet' href="{{url_for('static', filename='styles.css')}}" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="{{url_for('index')}}">Home</a>
+            <a class="nav-item nav-link" href="{{url_for('puppies.add')}}">Add Puppy</a>
+            <a class="nav-item nav-link" href="{{url_for('puppies.delete')}}">Delete Puppy</a>
+            <a class="nav-item nav-link" href="{{url_for('puppies.list')}}">List Puppies</a>
+            <a class="nav-item nav-link" href="{{url_for('owners.add')}}">Add Owner</a>
+            <a class="nav-item nav-link" href="{{url_for('owners.delete')}}">Delete Owner</a>
+        </div>
+    </nav>
+    {% block content %}
+
+    {% endblock %}
+</body>
+
+</html>

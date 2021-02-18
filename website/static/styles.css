@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+
+html {
+    height: 100%;
+  }
+
+div.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.jumbotron{
+  background: none;
+  padding-top: 7%;
+}
+
+body {
+  font-family: "Luckiest Guy", cursive;
+  min-height: 100%;
+  background: radial-gradient(
+    circle,
+    rgb(253, 136, 90) 0%,
+    rgb(119, 47, 5) 100%
+  );
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 8em;
+    padding: 0;
+    color: white;
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+        0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+        0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+        -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: white;
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+        0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+        0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+        -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+span {
+    transform: scale(0.9);
+    display: inline-block;
+  }
+  span:first-child {
+    animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite
+      alternate;
+  }
+  span:last-child {
+    animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+      infinite alternate;
+  }
+
+@keyframes bop {
+  0% {
+    transform: scale(0.9);
+  }
+  50%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bopB {
+  0% {
+    transform: scale(0.9);
+  }
+  80%,
+  100% {
+    transform: scale(1) rotateZ(-3deg);
+  }
+}
+
+form.clickhere{
+  display: flex;
+  justify-content: center;
+  padding-top:5%;
+  font-size: xx-large;
+}
+
+div.addpagediv h1{
+  font-size: xxx-large;
+  padding: 5%;
+}
+
+div.addpagediv p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  color: white;
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+        0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+        0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+        -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+form.addpageform{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input.formsubmit{
+  border-radius: 10px;
+}
+
+div.deletepagediv h1{
+  font-size: xxx-large;
+  padding: 5%;
+}
+
+div.deletepagediv p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  color: white;
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+        0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+        0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+        -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+form.deletepageform{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input.formsubmit{
+  border-radius: 10px;
+}
+
+div.listpagediv h1{
+  font-size: xxx-large;
+  padding: 5%;
+}
+
+table{
+  width: 100%;
+}
+
+th {
+  background-color: #552701;
+  color: rgb(245, 221, 206);
+  font-style: normal;
+  font-weight: lighter;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+table, th, td {
+  border: 3px solid black;
+}
+
+tr:hover {
+  background-color: #ffe7d7;
+}
+
+div.addownerpagediv h1{
+  font-size: xxx-large;
+  padding: 5%;
+}
+
+div.addownerpagediv p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  color: white;
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+        0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+        0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+        -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+form.addownerpageform{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input.formsubmit{
+  border-radius: 10px;
+}
+
+div.deleteownerpagediv h1{
+  font-size: xxx-large;
+  padding: 5%;
+}
+
+div.deleteownerpagediv p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  color: white;
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+        0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+        0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+        -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+form.deleteownerpageform{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.error{
+  font-size: xxx-large;
+}
