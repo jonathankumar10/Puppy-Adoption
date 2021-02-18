@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, redirect, url_for
 from website import db
 from website.models import Owner
 from website.models import Puppy
-from website.owners.forms import AddForm
+from website.owners.forms import AddForm, DeleteForm
 
 owners_blueprints = Blueprint('owners',__name__,template_folder='templates/owners')
 
@@ -36,7 +36,7 @@ def add():
 @owners_blueprints.route('/delete_owner', methods=['GET','POST'])
 def delete():
 
-    form = AddForm()
+    form = DeleteForm()
 
     if form.validate_on_submit():
 
